@@ -1,0 +1,66 @@
+<head>
+    <title> Cannons </title>
+    <link rel="shortcut icon" href="images/cannon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Satisfy&display=swap" rel="stylesheet">
+
+    <style>
+      /* Giving flex to organize content, hover effect, space background, font styles, size, and color, and removing the decoration of the anchor tag, putting a box around Quit, and canvas height and width */
+      canvas {
+        width: 100%;
+        height: 600px;
+      }
+      .box {
+        border:white 2px solid;
+        height: 100px;
+        width: 100px;
+      }
+      body {
+        background-image: url("images/space.jpg");
+        background-color: black;
+      }
+      p, a {
+        color: white;
+        font-size: 30px;
+        font-family: 'Indie Flower', cursive;
+      }
+      p:hover, a:hover {
+        color: yellow;
+        }
+      a {
+        text-decoration: none !important;
+      }
+      .flex {
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+    <script defer src="canvas.js"></script>
+    <script defer src="levelDesign.js"></script>
+    <script defer src="ball.js"></script>
+    <script defer src="cannons.js"></script>
+    <script defer src="games.js"></script>
+  </head>
+  
+  <body>
+
+    <div class="flex">
+      <!-- Initial Score of the player -->
+      <p>Score: <span id ="counter">0</span></p>
+      <!-- What Level you're playing -->
+      <p>Level <span id = "level">1</span></p>
+      <p id="gameMessage"></p>
+      <!-- What's your ammo supply? -->
+      <p>Ammo: <span id="ammo">15</span></p>
+    
+      <!-- Quit button to go back to Title Screen -->
+      <div class = "box">
+        <p><center><a href="title.html"> Quit </a></center></p>
+      </div>
+
+    </div>
+
+    <hr>
+    <!-- This is wheere Canvas starts, right after the flex div -->
+    <canvas id="display"></canvas>
+  </body>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head> 
+    <link rel="shortcut icon" href="images/cannon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Satisfy&display=swap" rel="stylesheet">
+
+    <title> Cannons </title>
+    <style>
+        /* Giving hover effect, space background, font styles, size, and color, and removing the decoration of the anchor tag */
+        div {
+            height: 100px;
+            width: 200px;
+            border:white 2px solid;
+        }
+        body {
+            background-image: url("images/space.jpg");
+            background-color: black;
+        }
+        p, a {
+            color: white;
+            font-size: 30px;
+            font-family: 'Indie Flower', cursive; 
+        }
+        p:hover, a:hover{
+            color: yellow;
+        }
+        h1 {
+            color: yellow;
+            font-size: 80px;
+            font-family: 'Satisfy', cursive;
+        }
+        h2{
+            color: yellow;
+            font-size: 40px;
+            font-family: 'Satisfy', cursive;
+        }
+        a {
+            text-decoration: none !important;
+        }
+    </style>
+    <!-- <script>
+        function keyChange(){
+            let keyButton = document.getElementById('keyButton')
+            let key = keyButton.textContent
+            let newInput = 
+            let newText = key.replace(key, key.value)
+        }
+    </script> -->
+</head>
+    <body>
+
+        <br>
+
+        <!-- Centers text -->
+        <center>
+            <!-- Settings Title -->
+            <h1> Settings </h1>
+            
+            <!-- Changing the fire input for the game -->
+            <h2> Want to change your fire button? (Will be soon implemented) </h2>
+            <div id="border">
+                <p id="keyButton" onclick="keyChange()"> Space </p>
+            </div>
+            
+            <br>
+            <br>
+            <br>
+
+            <!-- Back to title screen page -->
+            <div class="back">
+                <p><a href = "title.html"> Go Back? </a></p>
+            </div>
+
+        </center>
+
+    </body> 
+</html>

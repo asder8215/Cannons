@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head> 
+    <link rel="shortcut icon" href="images/cannon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+    <title> Cannons </title>
+    <style>
+        /* Giving flex to organize and put the boxes in certain columns and rows, margining, hover effect, space background, font styles, size, and color, and removing the decoration of the anchor tag */
+        .levels {
+            width: 100%;
+        }
+        .row {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+        }
+        body {
+            background-image: url("images/space.jpg");
+            background-color: black;
+            overflow-y: hidden;
+        }
+        p{
+            color: white;
+            font-size: 70px;
+            font-family: 'Indie Flower', cursive;
+            border:white 2px solid;
+            height: 100px;
+            width: 150px;
+            margin: 0;
+        }
+        p:hover, a:hover{
+            color: yellow;
+        }
+        h1 {
+            color: yellow;
+            font-size: 80px;
+            font-family: 'Satisfy', cursive;
+            text-align: center;
+        }
+        .moveRight{
+            color: white;
+            font-size: 50px;
+            font-family: 'Indie Flower', cursive;
+            border:white 2px solid;
+            height: 70px;
+            width: 120px;
+            margin: 0;
+            text-align: center;
+        }
+        a {
+            text-decoration: none !important;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+    <script defer src = "levelDesign.js"> </script>
+
+</head>
+    <body>
+
+        <br>
+
+        <!-- Text centered -->
+        
+            <div class = "flex">
+                <r></r>
+                <r></r>
+                <r></r>
+                <h1 text-align="center"> Levels </h1>
+                <r></r>
+                <a href= "title.html"><p class= "moveRight"> Back </p></a>
+            </div>
+
+        <center>
+            <div class="levels">
+
+                <!-- Levels 1 - 4 put in a row -->
+                <div class="row">
+                  <a href="cannons.html"><p>1</p></a>
+                  <a href=""><p>2</p></a>
+                  <a href=""><p>3</p></a>
+                  <a href=""><p>4</p></a>
+                </div>
+
+                <!-- Levels 5 - 8 put in a row -->
+                <div class="row">
+                    <a href=""><p>5</p></a>
+                    <a href=""><p>6</p></a>
+                    <a href=""><p>7</p></a>
+                    <a href=""><p>8</p></a>
+                </div>
+
+                <!-- Levels 9 - 12 put in a row -->
+                <div class="row">
+                    <a href=""><p>9</p></a>
+                    <a href=""><p>10</p></a>
+                    <a href=""><p>11</p></a>
+                    <a href=""><p>12</p></a>
+                </div>
+
+              </div>
+        </center>
+
+    </body> 
+</html>
